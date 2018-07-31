@@ -1,0 +1,174 @@
+---
+title: "A Bayesian Approach of Forensic Handwriting Evidence"
+author: "Amy Crawford"
+date: "July 31, 2018"
+output: 
+    rmdshower::shower_presentation:
+        ratio: 4x3
+---
+
+## <br> A Bayesian Approach to Forensic <br /> Handwriting Evidence <br>
+<img src="background-logo.png" class="cover" width=1200 height=800>
+
+<br>
+<p class="grey">
+**Amy Crawford** <br />
+Center for Statistics and Applications in Forensic Evidence  <br />
+Iowa State University<br />
+July 30, 2018
+</p> 
+
+## Statistics in Forensics
+<img src="background-logo.png" class="cover" width=1200 height=800>  
+
+- 2016 PCAST Report on Forensic
+    - President’s Council of Advisors on Science and Technology recommended actions be taken to **strengthen forensic science** and called attention to the **scientific validity** of the analysis of some forms of forensic evidence.
+- Questioned documents were an evidence form called to attention.
+- Questioned document examiners (QDEs)
+    - Proficiency testing
+    - Expert *Opinion*
+    
+## A Situation
+<img src="background-logo.png" class="cover" width=1200 height=800>  
+
+- Classroom (10 students)
+- Threat letter
+- Task for QDEs
+<center> <img src="bomb.jpg" width=350 height=400/>   </center>
+    
+# Data
+
+## Computer Vision Lab (CVL)
+ <img src="background-logo.png" class="cover" width=1200 height=800> 
+
+- Vienna University of Technology
+- 310 writers
+- 7 handwritten texts
+- 6 in English, 1 in German
+
+
+*Sample writing:*
+<img src="0004_1_crop.png" width=750>
+
+## Feature Extraction with FLASH ID  
+<img src="background-logo.png" class="cover" width=1200 height=800>  
+
+
+Sciometrics, LLC  
+  
+*Example of locations the software may propose breaks.*  
+
+<img src="hello_world.png" width=750>
+
+## Graphemes
+<img src="background-logo.png" class="cover" width=1200 height=800>  
+
+
+*Example of a grapheme in the FLASH ID interface.*<br />  *SCREENSHOT*
+
+<img src="Grapheme.png" width=500>
+
+
+## Grouping Graphemes
+<img src="background-logo.png" class="cover" width=1200 height=800>  
+
+
+<img src="graphs.png" width = 825, height = 200>  <br />
+- (a) graphemes with 4 nodes and binary connection code 112 (label 4_112).  
+- (b) graphemes with 4 nodes and different binary connection codes.  
+- (c) a grapheme with 6 nodes.
+
+
+
+## Data  
+<img src="background-logo.png" class="cover" width=1200 height=800>  
+
+
+<br><br>
+<img src="datatable.png" width=750>
+
+## Grapheme Selection
+<img src="background-logo.png" class="cover" width=1200 height=800>  
+
+
+- Graphemes are placed in order of importance for predictive analysis using random forest.  
+
+*A few of the most "important" graphemes.*
+
+<img src="graphemes.png" width=850>
+
+
+# Model
+<img src="background-logo.png" class="cover" width=1200 height=800>  
+
+
+
+## Hierarchical Model
+<img src="background-logo.png" class="cover" width=1300 height=800>  
+
+<center><img src="model.png" width=450></center>
+<img src="modelwhere.png" width=800>
+
+## Analysis of Questioned Writing  
+<img src="background-logo.png" class="cover" width=1200 height=800>    
+ 
+<img src="qd_sentence.png" width=825>   
+
+<center><img src="qd_equation.png" width=650></center>   
+  
+
+<img src="qdwhere.png" width=850>
+
+## How Many Graphemes?
+<center><img src="pp_authorship_seq2.png" width=800></center>
+
+## Writing Samples
+**TOP**: Writer #1 <br> **BOTTOM**: Writer #6  
+<center><img src="w1w6.png" width=525></center>
+
+<img src="background-logo.png" class="cover" width=1200 height=800>
+
+## How Many Graphemes?
+<center><img src="pp_authorship_seq2_red.png" width=800></center>
+
+## Writer 3?
+<center><img src="26graphemes.png" width=800></center>
+
+## Writing Samples  
+**TOP**: Writer #3 <br> **BOTTOM**: Writer #4  
+<img src="w3w4.png" width=700>
+
+<img src="background-logo.png" class="cover" width=1200 height=800>
+
+
+## Density Estimates of Posterior Distn. for $\pi_w$'s
+<img src="background-logo.png" class="cover" width=1200 height=800>  
+
+<img src="posteriorsamps.png" width=850>
+
+
+## The Situation
+<img src="background-logo.png" class="cover" width=1200 height=800>  
+
+- Classroom (10 students)
+- Threat letter
+
+<center><img src="qd_equation.png" width=600></center>  
+<img src="bomb.jpg" width=300>
+
+
+## Threat Letter
+<img src="background-logo.png" class="cover" width=1200 height=800>  
+
+<img src="newdata.png" width=425><img src="bomb.jpg" width=200>    
+
+<img src="qd_equation.png" width=600> 
+
+## Threat Letter
+<img src="background-logo.png" class="cover" width=1200 height=800>  
+
+<center><img src="pp_writership.png" width=500>  </center>
+
+<img src="bomb.jpg" width=250>
+
+
